@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+    <title>User Login and Sessions</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="javascripts/comments.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+
+<body>
+    <div ng-controller="myController">
+        <h2 id="welcomeText">Welcome. You are Logged In as
+            <%= username %>
+        </h2>
+        <a id="logoutLink" href="/logout">logout</a>
+        <a id="editLink" href="/user">Edit User</a>
+
+
+        <form id="commentForm" action="">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="username" ng-model="user.username" disabled>
+            <label for="comment">Comment: </label><input type="text" id="comment" placeholder="Comment">
+            <button class="btn btn-info" id="postComment">Post Comment</button>
+        </form>
+        <button class="btn btn-info" id="getComments">Get Comments</button>
+        <!--<button class="btn btn-info" id="deleteComments">Delete All</button>-->
+        <div id="comments"></div>
+
+
+    </div>
+    <hr>
+    <span id="indexMsg">
+        <%= msg %>
+    </span>
+    <hr>
+    <span id="colorText">
+    Color
+        <%= color %>
+      </span>
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="/javascripts/my_app.js"></script>
+</body>
+
+</html>
