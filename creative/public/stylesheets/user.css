@@ -1,0 +1,16 @@
+body {
+    background-image: url("/stylesheets/hudhud.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:cover;
+    color:rgb(1, 254, 161);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.form-container{
+    background-color:rgba(0, 0, 0, 0.5);
+}

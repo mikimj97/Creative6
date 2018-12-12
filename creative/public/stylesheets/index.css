@@ -1,0 +1,12 @@
+body {
+    background-image: url("/stylesheets/hudhud.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size:cover;
+    color:rgb(1, 254, 161);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+    color:rgb(1, 254, 246);
+}
