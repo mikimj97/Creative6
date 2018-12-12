@@ -25,7 +25,7 @@ $(document).ready(function() {
             var everything = "<ul class=\"list-group\">";
             for (var comment in data) {
                 com = data[comment];
-                everything += "<li class=\"list-group-item\"> Name: " + com.Name + " <br/> Comment: " + com.Comment + "</li>";
+                everything += "<li class=\"list-group-item\">" + com.Comment +" -" + com.Name + "</li>";
             }
             everything += "</ul>";
             $("#comments").html(everything);

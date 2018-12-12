@@ -113,5 +113,12 @@ router.get('/comment', function(req, res, next) {
 
 });
 
+router.delete('/comment', function(req, res, next) {
+    console.log("In delete route");
+    Comment.deleteMany({}, function(err, result) {
+        if (err) return console.error(err);
+    })
+});
+
 
 module.exports = router;

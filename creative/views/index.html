@@ -2,7 +2,7 @@
 <html ng-app="myApp">
 
 <head>
-    <title>User Login and Sessions</title>
+    <title>Story Maker</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="javascripts/comments.js"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
@@ -10,7 +10,7 @@
 
 <body>
     <div ng-controller="myController">
-        <h2 id="welcomeText">Welcome. You are Logged In as
+        <h2 id="welcomeText">Welcome
             <%= username %>
         </h2>
         <a id="logoutLink" href="/logout">logout</a>
@@ -20,11 +20,11 @@
         <form id="commentForm" action="">
             <label for="name">Name: </label>
             <input type="text" id="name" name="username" ng-model="user.username" disabled>
-            <label for="comment">Comment: </label><input type="text" id="comment" placeholder="Comment">
-            <button class="btn btn-info" id="postComment">Post Comment</button>
+            <label for="comment">Sentence: </label><input type="text" id="comment" placeholder="Comment">
+            <button class="btn btn-info" id="postComment">Post Sentence</button>
         </form>
-        <button class="btn btn-info" id="getComments">Get Comments</button>
-        <!--<button class="btn btn-info" id="deleteComments">Delete All</button>-->
+        <button class="btn btn-info" id="getComments">Get Story</button>
+        <button class="btn btn-info" id="deleteComments">Delete All</button>
         <div id="comments"></div>
 
 
@@ -35,7 +35,7 @@
     </span>
     <hr style="visibility: hidden">
     <span id="colorText">
-    Color
+    Movie:
         <%= color %>
       </span>
     <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>
