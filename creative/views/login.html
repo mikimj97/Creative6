@@ -2,14 +2,19 @@
 <html>
     
 <head>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
     <title>User Login and Sessions</title>
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
 </head>
         
 <body>  
     <div class="form-container">
-        <p class="form-header">Login</p>
-        <form method="POST" action="/login">
+        <p class="marquee"><span> 机 10 01100 机 100 机机机 100001110 ____________ Welcome. I am Swarm-Mind Story Maker 2077 ____________ 机 10 01100 机 100 机机机 100001110 </span></p>
+        <p class="marquee"><span> 故事 0010 10100 101故事001 0100 100 故事 故事 0010 10100 101 故事001 0100 100 故事 ____________ You are strongly encouraged to login or register ____________ 故事 0010 10100 101故事001 0100 100 故事 </span></p>
+        <p class="marquee"><span> 集团 0010101000 0101 0100001 010100 集团 集团 100101010 0101 1000 _______________ Failure to participate will result in [disciplinary_subroutine_7] _______________ 集团 10010 101000010101 0100101 0101010 1010集团 1010101 10</span></p>         
+        <image class="eye" src="stylesheets/eye.gif"></image>
+        <image class="mesh" src="stylesheets/mesh.gif"></image>
+        
+        <form class="theForm" method="POST" action="/login">
             <label>Username:</label>
             <input type="text" id="username" name="username"><br>
             <label>Password:</label>
@@ -18,7 +23,7 @@
         </form>
     </div>
     <a id="signUpLink" href="/signup">Sign Up</a>
-    <hr>
+    <hr style="visibility: hidden">
     <span id="loginMsg">
     <%= msg %>
     </span>

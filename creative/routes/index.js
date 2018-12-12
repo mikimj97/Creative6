@@ -44,7 +44,7 @@ router.get('/user', function(req, res) {
     res.render('user', { msg: req.session.msg });
   }
   else {
-    req.session.msg = 'Access denied!';
+    req.session.msg = 'Access denied!Access denied!Access denied!Access denied!Access denied!Access denied!Access denied!Access denied!Access denied!';
     res.redirect('/login');
   }
 });

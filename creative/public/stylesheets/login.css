@@ -1,0 +1,111 @@
+body {
+    background-image: url("cyber.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+   /* color: red;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+    
+}
+
+.form-header{
+    color:rgb(1, 254, 161);
+     text-align: center;
+     font-family: monospace;
+     font-weight: bold;
+     font-size: 20px;
+     
+}
+
+.eye{
+     border-radius: 50%;
+       position: fixed;
+        display:inline;
+      top: 50%;
+      left: 50%;
+      margin-top: -180px;
+      margin-left: -200px;
+      height: 200px;
+      width:400px;
+      z-index: 300;
+}
+
+.mesh{
+     border-radius: 50%;
+       position: fixed;
+       display:inline;
+      top: 70%;
+      left: 15%;
+      margin-top: -400px;
+      margin-left: -200px;
+      height: 700px;
+      width:700px;
+      opacity: 0.2;
+}
+
+/* Make it a marquee */
+.marquee {
+ 
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    color:rgb(1, 254, 161);
+    font-size:20px;
+    font-family:monospace;
+    font-weight: bold;
+}
+
+.marquee span {
+       margin-top: 20px;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0%, 0%); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.theForm{
+    position:fixed;
+    margin-left:35%;
+    margin-top: 25%;
+    color:rgb(1, 254, 161);
+    text-align: center;
+     font-family: monospace;
+     font-weight: bold;
+     font-size: 40px;
+}
+
+#signUpLink{
+     color:rgb(1, 254, 161);
+     text-align: center;
+     font-family: monospace;
+     font-weight: bold;
+     font-size: 30px;
+     margin-left:45%;
+     margin-top:70%;
+}
+
+#login{
+    color:rgb(1, 254, 161);
+    background-color:rgb(254, 1, 195);
+    border-color:rgb(254, 1, 195);
+    width:80px;
+    height:30px;
+}
+
+#loginMsg{
+    color:rgb(1, 254, 161);
+    width:80px;
+    height:30px;
+     font-family: monospace;
+     font-weight: bold;
+     font-size:20px;
+     text-align:center;
+}
